@@ -29,3 +29,11 @@ git push origin main                                               ## pushes to 
  git push                                                          ## Shorter version of push Command
 
  git push -u origin main                                           ## 
+
+git remote -v                                                      ## To list the origin set in remote
+
+ git remote add origin https://github.com/ALSPraveen/Gitbash-Demo.git  ## To set the origin when no origin is set
+
+ git remote set-url origin https://github.com/ALSPraveen/Gitbash-Demo.git  ## If the origin is already set and you want to change it.
+
+ git fetch origin                                                          ## It fetches the differences between repos in local and remote
