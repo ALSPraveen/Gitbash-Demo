@@ -1,0 +1,1 @@
+Git discard changes in workig directory command
