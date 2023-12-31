@@ -1,3 +1,12 @@
 To launch Notepad++ from git bash you will need edit the nevironment variables of your system
 
 In Windows Search -> type "Edit the system environment variables" -> Advanced -> Environment Variables ->Edit -> In new line paste the location of Notepad++ "C:\Program Files\Notepad++"-> Save it.  
+
+
+## Configuring Notepad ++
+
+notepad++ .bash_profile
+
+  -> Notepad ++ file prompts 
+  -> alias npp = 'notepad++.exe -multiInst -nosession'
+  -> Save and close notepad and gitbash as well
