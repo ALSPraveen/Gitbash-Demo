@@ -37,3 +37,5 @@ git remote -v                                                      ## To list th
  git remote set-url origin https://github.com/ALSPraveen/Gitbash-Demo.git  ## If the origin is already set and you want to change it.
 
  git fetch origin                                                          ## It fetches the differences between repos in local and remote
+
+git pull origin main                                               ## git fetch + git merge
