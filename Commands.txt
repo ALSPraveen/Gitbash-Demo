@@ -39,3 +39,11 @@ git remote -v                                                      ## To list th
  git fetch origin                                                          ## It fetches the differences between repos in local and remote
 
 git pull origin main                                               ## git fetch + git merge
+
+git ls-files                                                       ## Shows all the files git is tracking
+
+
+
+Git can unstage all the staged files . Use the following command to back out all the changes from staging area
+
+git reset HEAD Commands.txt
