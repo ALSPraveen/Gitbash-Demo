@@ -1,0 +1,31 @@
+git --version                                                      ## To check the current version of git
+
+git config --global user.name "ALSPraveen"                         ## To add your github account user name
+
+ git config --global user.email "saipraveenakurathi@gmail.com"     ## To add your github account email
+
+ git config --global --list                                        ## To list the config settings
+
+ git config --global init.defaultBranch main                       ## Update git settings to use main as default branch
+
+git init                                                           ## Initialize git repository
+
+ git init -b main Gitbash-demo                                     ## Specifying and creating a git local repository with default branch main
+
+ git init Gitbash-demo                                             ## Creates & Initializes a git repository
+
+git status                                                         ## Git checks if there are any updates made in the repo
+
+git add Commands.txt                                               ## Adds the file to the staging area
+
+ git add .                                                         ## Adds all the files to the staging area
+
+git commit -m "First commit"                                       ## Commits all the files in the local repository
+
+ git commit -am "Adds & Commits"                                   ## Adds and Commits the files with the same command
+
+git push origin main                                               ## pushes to the remote repository
+
+ git push                                                          ## Shorter version of push Command
+
+ git push -u origin main                                           ## 
