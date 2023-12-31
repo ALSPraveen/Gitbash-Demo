@@ -47,3 +47,8 @@ git ls-files                                                       ## Shows all 
 Git can unstage all the staged files . Use the following command to back out all the changes from staging area
 
 git restore --staged Commands.txt
+
+
+You can discard the changes from the unstaged file to working directory 
+
+git checkout -- Commands.txt                 
