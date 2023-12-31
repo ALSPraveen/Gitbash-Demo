@@ -46,4 +46,4 @@ git ls-files                                                       ## Shows all 
 
 Git can unstage all the staged files . Use the following command to back out all the changes from staging area
 
-git reset HEAD Commands.txt
+git restore --staged Commands.txt
