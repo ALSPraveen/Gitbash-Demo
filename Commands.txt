@@ -28,7 +28,7 @@ git push origin main                                               ## pushes to 
 
  git push                                                          ## Shorter version of push Command
 
- git push -u origin main                                           ## 
+ git push -u origin main                                           ## sets up stream so that and stores location branch so that next when we use "git push" it automatically refers to up stream locationi
 
 git remote -v                                                      ## To list the origin set in remote
 
@@ -51,4 +51,43 @@ git restore --staged Commands.txt
 
 You can discard the changes from the unstaged file to working directory 
 
-git checkout -- Commands.txt                 
+git checkout -- Commands.txt 
+
+
+
+git mv file1.txt file1-renamed.txt                                 ## With git mv command , git understands that file is renamed & changes were done at remote level and we only need to commit the changes.
+
+ mv file1.txt file1-renamed.txt                                    ## At operating system level , we need to git understands it as the file is deleted and new file has been created,So we need to add changes to                                                                       staging area and then commit it.
+
+ git add -A                                                        ## -A parameter lets git know of renamed , deleted or moved files and add them to staging area.
+
+
+
+git log 
+
+ git log --abbrev-commit                                           ## Shortens commit id
+
+ git log --online --graph --decorate                               ## Lists commits in on line , decorates and adds labels 
+
+ git log 78956...gv99977                                           ## Lists commits between those commit ids
+
+ git log --since="3 days ago"                                      ## Lists commits that happened in the last three days
+
+ git log -- file.txt                                               ## Lists commits done to that specific file
+
+ git log --follow file.txt                                         ## Lists commits done for renames
+
+
+
+
+git show 7899ECD                                                   ## Gives more specific details of commits, what ha been committed and all
+
+git clean -n                                                       ## Shows which untracked files would be removed
+
+ git clean -f                                                      ## Removes untracked files
+
+ git clean -fd                                                     ## Removes untracked files & directories
+
+ git clean -ix                                                     ## Removes untracked files interactively
+
+
