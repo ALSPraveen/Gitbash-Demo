@@ -88,6 +88,6 @@ git clean -n                                                       ## Shows whic
 
  git clean -fd                                                     ## Removes untracked files & directories
 
- git clean -ix                                                     ## Removes untracked files interactively
+ git clean -iX                                                     ## Removes untracked files & ignored files interactively
 
 
