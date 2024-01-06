@@ -4,3 +4,6 @@ In Windows Search -> type "Edit the system environment variables" -> Advanced ->
 
 
 Unable to config NPP+ as default code editor for git bash
+
+notepad++ .gitconfig -> Opens already existing files in notepad++ 
+notepad++ -> Opens notepad++ and asks to create new file 
