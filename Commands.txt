@@ -91,3 +91,8 @@ git clean -n                                                       ## Shows whic
  git clean -iX                                                     ## Removes untracked files & ignored files interactively
 
 
+
+.gitignore                                                         ## Mention files and directories you want to ignore in that .gitignore
+
+ ignoring-file.txt                                                 -- File
+ ignoring-directory/                                               -- Directory
