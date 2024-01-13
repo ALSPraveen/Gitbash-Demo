@@ -151,5 +151,8 @@ git branch -a                                                      ## Lists the 
 
  Merging feature branch into main branch:
 
- git merge feature                                                 ## It will merge the changes done in feature branch to main branch
-                                                                      perform this activity in main branch
+git merge feature                                                 ## First commit the changes in feature branch , then checkout to main and perform merge .It will merge the changes done in feature branch to mai                                                                     n branch
+
+git diff feature main                                             ## Can see the difference between feature and  main branches.
+
+git merge feature --no--ff                                        ## No fast forward option, preserves commits
