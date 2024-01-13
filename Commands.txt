@@ -131,3 +131,25 @@ git diff HEAD HEAD^                                                ## It gives d
 
 
 git diff main origin/main                                          ## It gives difference between local repo and remote repo
+
+
+Branches :
+
+git branch -a                                                      ## Lists the branches associated with the git repo
+
+ git branch newbranch                                              ## Create a new branch
+
+ git checkout newbranch                                            ## Switches to the new branch
+
+ git branch -m newbranch branch                                    ## Renaming a branch
+
+ git branch -d newbranch                                           ## deleteing a branch
+
+ git checkout -b praveen                                           ## Creates and switches to the new branch
+
+
+
+ Merging feature branch into main branch:
+
+ git merge feature                                                 ## It will merge the changes done in feature branch to main branch
+                                                                      perform this activity in main branch
