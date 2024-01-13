@@ -155,4 +155,12 @@ git merge feature                                                 ## First commi
 
 git diff feature main                                             ## Can see the difference between feature and  main branches.
 
-git merge feature --no--ff                                        ## No fast forward option, preserves commits
+git merge feature --no-ff                                         ## No fast forward option, preserves commits
+
+
+Resolving conflicts,
+
+Whenever there is a modification made in excat file in two or more different branches , a conflict arises.
+
+git mergetool                                                     ## it will open a mergetool and asks for possible combination of merges , choose that and exit .
+                                                                     Commit the changes after resolving the conflict
