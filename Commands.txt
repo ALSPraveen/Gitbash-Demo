@@ -107,3 +107,12 @@ Working directory ->   Staging area   -> .git local repositori   ->  remote repo
 git diff                                                           ## It gives the difference between files in working and staging area
 
  git difftool                                                      ## same as diff but a visual difftool will be opened
+
+git diff HEAD                                                      ## It gives the difference between files in working directory and last commmited files
+ 
+ git difftool HEAD                                                 ## same as diff but a visual difftool will be opened
+
+
+git diff --staged HEAD                                             ## It gives the difference between files in staged area and last commmited files
+ 
+ git difftool --staged HEAD                                        ## same as diff but a visual difftool will be opened  
