@@ -116,3 +116,16 @@ git diff HEAD                                                      ## It gives t
 git diff --staged HEAD                                             ## It gives the difference between files in staged area and last commmited files
  
  git difftool --staged HEAD                                        ## same as diff but a visual difftool will be opened  
+
+
+git diff  f9245 654f43                                             ## It gives the difference between mentioned commit ids
+ 
+ git difftool --staged HEAD                                        ## same as diff but a visual difftool will be opened 
+
+ 
+git diff  f9245 HEAD                                               ## It gives the difference between mentioned commit id and HEAD
+
+                                                                      Here HEAD refers to last commit id
+
+git diff HEAD HEAD^                                                ## It gives difference between HEAD commit and HEAD commit -1
+
