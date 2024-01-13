@@ -129,3 +129,5 @@ git diff  f9245 HEAD                                               ## It gives t
 
 git diff HEAD HEAD^                                                ## It gives difference between HEAD commit and HEAD commit -1
 
+
+git diff main origin/main                                          ## It gives difference between local repo and remote repo
