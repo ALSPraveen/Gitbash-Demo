@@ -173,3 +173,21 @@ git rebase main                                                   ## if you want
 
  git rebase --continue                                            ## After you resolve rebase conflict using "git mergetool" , then add the file to staging area , commit it and run continue command to completre                                                                     rebase
 
+
+
+How can others clone your private repository ?
+
+1.Create a private repository
+2.Settings of private reo -> Collaborators -> Add people -> type username of the individual who needs access
+3.Your friend should use below command to clone it
+
+  https://<friend_username>:<Personal_Access_Token>@github.com/ALSPraveen/Private-repo.git
+  Note : your freind should have a PAT set up in his account already to authenticate the identify.
+
+
+Steps to set up PAT :
+1.Go to Settings -> Developer settings
+2.Go to classical tokens
+3.Give the permissions required
+4. Submit , you will see a token created , copy it (you can only see it once)
+
