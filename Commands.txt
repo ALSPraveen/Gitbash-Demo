@@ -163,4 +163,9 @@ Resolving conflicts,
 Whenever there is a modification made in excat file in two or more different branches , a conflict arises.
 
 git mergetool                                                     ## it will open a mergetool and asks for possible combination of merges , choose that and exit .
-                                                                     Commit the changes after resolving the conflict
+                                                                     Commit the changes after resolving the conflit
+
+
+git rebase main                                                   ## if you want the changes done in main branch to reflect in feature branch , you have to rebase it.
+                                                                     Run this command in feature branch
+
