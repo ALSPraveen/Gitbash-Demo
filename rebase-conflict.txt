@@ -1,5 +1,1 @@
-<<<<<<< HEAD
- Rebase Conflict
-=======
-nice
->>>>>>> 86d956b (ok)
+Rebase Conflict
