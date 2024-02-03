@@ -28,7 +28,7 @@ git push origin main                                               ## pushes to 
 
  git push                                                          ## Shorter version of push Command
 
- git push -u origin main                                           ## sets up stream so that and stores location branch so that next when we use "git push" it automatically refers to up stream locationi
+ git push -u origin main                                           ## sets up stream  and stores location of the branch so that next time when we use "git push" it automatically refers to up stream location
 
 git remote -v                                                      ## To list the origin set in remote
 
