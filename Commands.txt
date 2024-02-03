@@ -203,3 +203,9 @@ git reset --hard HEAD                                                         ##
 
 
 git revert 2f345                                                              ## Same as reset but preserves the commit .
+
+
+
+Reset should be used when the changes are not yet pushed to remote repo
+
+Revert should be used when the changes are pushed to remote repo 
