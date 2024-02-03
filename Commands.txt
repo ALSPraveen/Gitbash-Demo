@@ -191,3 +191,15 @@ Steps to set up PAT :
 3.Give the permissions required
 4. Submit , you will see a token created , copy it (you can only see it once)
 
+
+How to reset commits?
+
+git reset --hard HEAD                                                         ## resets the commits and deletes the previous commits
+
+ git reset --hard 2f345                                                       ## resets the commits using commit ID
+
+ git reset --hard HEAD^1                                                      ## Resets the commits to HEAD -1
+
+
+
+git revert 2f345                                                              ## Same as reset but preserves the commit .
