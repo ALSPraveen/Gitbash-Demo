@@ -169,3 +169,7 @@ git mergetool                                                     ## it will ope
 git rebase main                                                   ## if you want the changes done in main branch to reflect in feature branch , you have to rebase it.
                                                                      Run this command in feature branch
 
+ git rebase --abort                                               ## When there is rebase conflict , you can use this command to come out of rebase
+
+ git rebase --continue                                            ## After you resolve rebase conflict using "git mergetool" , then add the file to staging area , commit it and run continue command to completre                                                                     rebase
+
