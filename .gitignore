@@ -1,2 +1,3 @@
 ignorign-file.txt
 ignoring-directory/
+*.orig
