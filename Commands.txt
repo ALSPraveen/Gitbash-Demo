@@ -77,7 +77,9 @@ git log
 
  git log --follow file.txt                                         ## Lists commits done for renames
 
+ git log --grep="My Commit Messsage"                               ## Searching commits based on commit ID
 
+ git show 78956                                                    ## Lists out the commit ID details 
 
 
 git show 7899ECD                                                   ## Gives more specific details of commits, what ha been committed and all
@@ -209,3 +211,8 @@ git revert 2f345                                                              ##
 Reset should be used when the changes are not yet pushed to remote repo
 
 Revert should be used when the changes are pushed to remote repo 
+
+
+How to cherry Pick?
+
+git cherry-pick <commit ID>                                                   ## Often we use this to make changes to different branch based one another branch	
