@@ -215,4 +215,23 @@ Revert should be used when the changes are pushed to remote repo
 
 How to cherry Pick?
 
-git cherry-pick <commit ID>                                                   ## Often we use this to make changes to different branch based one another branch	
+git cherry-pick <commit ID>                                                   ## Often we use this to make changes to different branch based one another branch
+
+
+
+
+Concept of Stashing(Temporary saving of files)
+
+git add .                                                                     ## For stash to work they need to be in tracked mode.
+
+git stash save "Add changes"                                                  ## Saves the stash with a stash ID
+
+git stash list                                                                ## Lists out all the stashes
+ 
+git stash apply <stash ID>                                                    ## Applies the saved Stashes and does not drop the stash
+
+git stash pop                                                                 ## Applies the top most stash and drops the stash
+
+git stash drop <stash ID>                                                     ## Just drops the stash but do not chnage anything in the directory
+
+git stash clear                                                               ## Just drops alll the statshes at onec and do not make any changes to directory
