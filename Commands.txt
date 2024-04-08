@@ -235,3 +235,34 @@ git stash pop                                                                 ##
 git stash drop <stash ID>                                                     ## Just drops the stash but do not chnage anything in the directory
 
 git stash clear                                                               ## Just drops alll the statshes at onec and do not make any changes to directory
+
+
+Concept of tagging(To save your commits historically and send them as releases)
+
+(You will need to commit before tagging)
+
+git tag v1.0                                                                  ## Create a tag
+
+ git tag                                                                      ## List the tags
+
+ git tag -a v1.1 -m "My message"                                              ## Annotated tag (same as normal tage but we can give a message here)
+
+git show v1.1                                                                 ## Shows the changes of that tag
+
+git tag -l "v1.*"                                                             ## Shows list of all the tags v1.*
+
+git push origin v1.1                                                          ## Push to repo(once pushed u will see releases get updated in github)
+
+ git push origin --tags                                                       ## pushes all tags at once
+
+git tag -d v1.1                                                               ## delete tags(does not delete from repo , only deletes from local)
+
+ git tag --delete v1.1                                                        ## another way to delete tags
+
+git push origin -d v.1                                                        ## delete from repo
+
+git checkout -b faeture v1.1                                                  ## Create new branch based on tag
+
+git tag v1.2 f23dt456                                                         ## Create a tag from a previous commit
+
+
