@@ -149,6 +149,8 @@ git branch -a                                                      ## Lists the 
 
  git checkout -b praveen                                           ## Creates and switches to the new branch
 
+ git branch praveen <commit SHA>                                   ## Creates a barch with from the commit ID
+
 
 
  Merging feature branch into main branch:
@@ -266,3 +268,19 @@ git checkout -b faeture v1.1                                                  ##
 git tag v1.2 f23dt456                                                         ## Create a tag from a previous commit
 
 
+
+
+Concept of submodules(To add other projects dependencies/libraries as part of your current project)
+
+git submodule add <git repo URL>                                              ## Adds other project folder to your current project
+
+git submodule update --init --recursive                                       ## If you clone your repo and it containes submodules, basically the submodules will be empty.To get all the data we need to initail                                                                                 aize the submodule recursively
+
+git clone --recurse-submodules <git repo URL>                                 ## Same as above , we can do it with one command
+
+
+
+
+Concept of reflog (Logging system for everything that happens in git)
+
+git reflog                                                                    ## Shows all the logging in git
