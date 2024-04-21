@@ -284,3 +284,23 @@ git clone --recurse-submodules <git repo URL>                                 ##
 Concept of reflog (Logging system for everything that happens in git)
 
 git reflog                                                                    ## Shows all the logging in git
+
+
+
+Concept of Blame(We can know who , where and when changes were made to particular files)
+
+git blame Commands.txt                                                        ## Will show details of who, when ,where changes were made to file
+
+git blame -L 4,8 Commands.txt                                                 ## Will show lines 4 to 8
+
+git blame -L 5,+3 Commands.txt                                                ## Will show lines from 5, 6,7
+
+git blame -s Commands.txt                                                     ## Will suppress author info
+
+git blame -s -L 10,18 Commands.txt
+
+git blame -e Commands.txt                                                     ## Authors email instaed of username
+
+git blame -f Commands.txt                                                     ## Filename in the original commit
+
+git blame -n Commands.txt                                                     ## Show line number in original commit
