@@ -316,3 +316,5 @@ git bisect good <Commit SHA>                                                  ##
 git bisect bad                                                                ## This is a bad commit 
 
 git bisect reset                                                              ## Resets to how it used to be before "git bisec start"
+
+git bisect log                                                                ## displays the flow of git bisect
