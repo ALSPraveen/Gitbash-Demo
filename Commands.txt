@@ -318,3 +318,11 @@ git bisect bad                                                                ##
 git bisect reset                                                              ## Resets to how it used to be before "git bisec start"
 
 git bisect log                                                                ## displays the flow of git bisect
+
+
+
+
+Concept of git hooks
+
+(We can use git hooks to automate some tasks like post commit , pre commit options)
+(.git folder contains hooks folder and in that folder you can create a post commit file and give executable option and whenever you execute commit , it will trigger post commit file )
