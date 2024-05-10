@@ -24,6 +24,8 @@ git commit -m "First commit"                                       ## Commits al
 
  git commit -am "Adds & Commits"                                   ## Adds and Commits the files with the same command
 
+git commit --amend                                                 ## Change commit message(An editor will open , change message save and close)
+
 git push origin main                                               ## pushes to the remote repository
 
  git push                                                          ## Shorter version of push Command
@@ -32,9 +34,13 @@ git push origin main                                               ## pushes to 
 
 git remote -v                                                      ## To list the origin set in remote
 
- git remote add origin https://github.com/ALSPraveen/Gitbash-Demo.git  ## To set the origin when no origin is set
+ git remote add origin https://github.com/ALSPraveen/Gitbash-Demo.git  
+                                                                   ## To set the origin when no origin is set
 
- git remote set-url origin https://github.com/ALSPraveen/Gitbash-Demo.git  ## If the origin is already set and you want to change it.
+ git remote set-url origin https://github.com/ALSPraveen/Gitbash-Demo.git  
+                                                                   ## If the origin is already set and you want to change it.
+
+ git remote add backup <remote-url>                                ## It has backup as location insted of origin 
 
  git fetch origin                                                          ## It fetches the differences between repos in local and remote
 
@@ -326,3 +332,10 @@ Concept of git hooks
 
 (We can use git hooks to automate some tasks like post commit , pre commit options)
 (.git folder contains hooks folder and in that folder you can create a post commit file and give executable option and whenever you execute commit , it will trigger post commit file )
+
+
+Concept of git squash
+(It is used to combine multiple commits into a single commit)
+
+git rebase -i HEAD~3                                                         ## an editor will open with last three commit hashes. for first commit let it be pick , for the rest of the two make it squash, save                                                                                 and close)
+ 
