@@ -24,7 +24,11 @@ git commit -m "First commit"                                       ## Commits al
 
  git commit -am "Adds & Commits"                                   ## Adds and Commits the files with the same command
 
-git commit --amend                                                 ## Change commit message(An editor will open , change message save and close)
+git commit --amend                                                 ## Change commit message.By default you can change message for latest commit(An editor will open , change message save and close)
+
+git rebase -i 3ar456v                                              ## An editor will open , change pick to edit for the hash id you like
+  
+   git commit --amend                                                 Now you can edit the mesage
 
 git push origin main                                               ## pushes to the remote repository
 
