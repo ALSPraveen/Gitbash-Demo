@@ -288,7 +288,7 @@ git submodule update --init --recursive                                       ##
 
 git clone --recurse-submodules <git repo URL>                                 ## Same as above , we can do it with one command
 
-
+ cd /path/to/submodule - git pull origin main                                 ## To pull changes from submodule
 
 
 Concept of reflog (Logging system for everything that happens in git)
@@ -343,3 +343,13 @@ Concept of git squash
 
 git rebase -i HEAD~3                                                         ## an editor will open with last three commit hashes. for first commit let it be pick , for the rest of the two make it squash, save                                                                                 and close)
  
+
+Concept of cloning only particular folder from git repo,
+
+git clone --no-checkout https://github.com/ALSPraveen/Maven-Examples.git     ## The --no-checkout flag prevents Git from automatically checking out the entire repository
+
+git config core.sparseCheckout true                                          ## This step configures Git to allow sparse checkouts, which means only specific parts of the repository will be checked out.
+
+echo "assembly-plugin" >> .git/info/sparse-checkout                          ## The .git/info/sparse-checkout file is used to define which parts of the repository should be checked out.
+
+git checkout main                                                            ## This command will checkout only the files in the specified directory.
