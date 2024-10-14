@@ -257,7 +257,7 @@ git tag v1.0                                                                  ##
 
  git tag                                                                      ## List the tags
 
- git tag -a v1.1 -m "My message"                                              ## Annotated tag (same as normal tage but we can give a message here)
+ git tag -a v1.1 -m "My message"                                              ## Annotated tag (same as normal tag but we can give a message here)
 
 git show v1.1                                                                 ## Shows the changes of that tag
 
@@ -273,7 +273,7 @@ git tag -d v1.1                                                               ##
 
 git push origin -d v.1                                                        ## delete from repo
 
-git checkout -b faeture v1.1                                                  ## Create new branch based on tag
+git checkout -b feature v1.1                                                  ## Create new branch based on tag
 
 git tag v1.2 f23dt456                                                         ## Create a tag from a previous commit
 
